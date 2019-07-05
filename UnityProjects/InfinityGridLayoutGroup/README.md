@@ -1,11 +1,5 @@
 ## 无限滚动列表的制作  
-一个痛并快乐的过程。
+无限滚动GridLayoutGroup,动态创建滚动Item;
 
-[DoTween文档](http://dotween.demigiant.com/documentation.php)  
-[缓动动画效果查看](http://robertpenner.com/easing/easing_demo.html)  
-[缓动函数速查表](https://easings.net/zh-cn)  
-[DoTween中文博客](https://blog.csdn.net/y1196645376/article/details/50661931)  
-
-## iTween插件研究  
-[雨松iTween插件博客](http://www.xuanyusong.com/archives/2052)  
-[iTween插件官方文档](http://www.pixelplacement.com/itween/documentation.php)    
+实现无限滚动，需要的最少的child数量。屏幕上能看到的+一行看不到的，
+比如我在屏幕上能看到 2 行，每一行 2 个。则这个值为 2行2个 + 1 行 2个 = 6个。 

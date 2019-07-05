@@ -26,16 +26,16 @@ public class InfinityScrollSetting : MonoBehaviour {
         text.text = msg;
     }
 
-    // 外部设置
-    void OnGUI()
-    {
-        if (GUILayout.Button("Add one item"))
-        {
-            infinityGridLayoutGroup.SetAmount(++amount);
-        }
-        if (GUILayout.Button("remove one item"))
-        {
-            infinityGridLayoutGroup.SetAmount(--amount);
-        }
-    }
+    //// 外部设置
+    //void OnGUI()
+    //{
+    //    if (GUILayout.Button("Add one item"))
+    //    {
+    //        infinityGridLayoutGroup.SetAmount(++amount);
+    //    }
+    //    if (GUILayout.Button("remove one item"))
+    //    {
+    //        infinityGridLayoutGroup.SetAmount(--amount);
+    //    }
+    //}
 }
