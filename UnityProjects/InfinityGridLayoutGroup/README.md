@@ -1,4 +1,5 @@
 ## 无限滚动列表的制作  
+一个痛并快乐的过程。
 
 [DoTween文档](http://dotween.demigiant.com/documentation.php)  
 [缓动动画效果查看](http://robertpenner.com/easing/easing_demo.html)  
