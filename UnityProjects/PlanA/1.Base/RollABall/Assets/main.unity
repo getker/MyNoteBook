@@ -1293,7 +1293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
-  text: {fileID: 0}
+  text: {fileID: 736356813}
+  winText: {fileID: 903738133}
 --- !u!54 &1601235964
 Rigidbody:
   m_ObjectHideFlags: 0
