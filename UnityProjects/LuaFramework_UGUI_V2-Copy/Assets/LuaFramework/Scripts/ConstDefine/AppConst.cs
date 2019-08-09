@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 namespace LuaFramework {
     public class AppConst {
+        // 打安卓包：{DebugMode = false, ExampleMode = false, UpdateMode = true, LuaByteMode = false, LuaBundleMode = true}
+        // 打PC包： {DebugMode = true, ExampleMode = false, UpdateMode = true, LuaByteMode = false, LuaBundleMode = true}
+        // 本地开发： {DebugMode = false, ExampleMode = false, UpdateMode = false, LuaByteMode = false, LuaBundleMode = false}
         public const bool DebugMode = false;                       //调试模式-用于内部测试
         /// <summary>
         /// 如果想删掉框架自带的例子，那这个例子模式必须要
@@ -17,9 +20,9 @@ namespace LuaFramework {
         /// 否则就需要自己将StreamingAssets里面的所有内容
         /// 复制到自己的Webserver上面，并修改下面的WebUrl。
         /// </summary>
-        public const bool UpdateMode = true;                       //更新模式-默认关闭 
+        public const bool UpdateMode = false;                       //更新模式-默认关闭 
         public const bool LuaByteMode = false;                       //Lua字节码模式-默认关闭 
-        public const bool LuaBundleMode = true;                    //Lua代码AssetBundle模式 
+        public const bool LuaBundleMode = false;                    //Lua代码AssetBundle模式 
         //- 默认true,设置为false，直接读取lua脚本代码。改C#代码记得Clear wrap files后重新生成(DebugMode可能也要设置为true)
 
         public const int TimerInterval = 1;

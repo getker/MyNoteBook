@@ -174,6 +174,7 @@ public class Packager {
         if (!Directory.Exists(resPath)) Directory.CreateDirectory(resPath);
         // Game 新增
         AddBuildMap("template" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Game/Prefabs/Template");
+        AddBuildMap("login" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Game/Prefabs/Login");
     }
 
     /// <summary>

@@ -37,5 +37,6 @@ function TemplateCtrl.OnClick(go)
     this.imgEnable = not this.imgEnable
    
     print('点击了按钮',this.imgEnable)
-    TemplatePanel.image.enabled = this.imgEnable
+    -- TemplatePanel.image.enabled = this.imgEnable
+    UIManager.OpenPanel(CtrlNames.Login, 'Template')
 end
