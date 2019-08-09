@@ -13,6 +13,7 @@ end
 
 --打开面板--
 -- ctrlName:define.lua的CtrlNames
+-- ctrl:返回控制器
 function UIManager.OpenPanel(ctrlName, closeName)
 	local ctrl = CtrlManager.GetCtrl(ctrlName);
     if ctrl ~= nil then
@@ -21,6 +22,7 @@ function UIManager.OpenPanel(ctrlName, closeName)
     if closeName then
         this.ClosePanel(closeName)
     end
+    return ctrl
 end
 
 --关闭面板--
