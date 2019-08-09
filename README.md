@@ -10,6 +10,12 @@
 [3.古迹探险](https://github.com/getker/MyNoteBook/tree/master/UnityProjects/PlanA/1.Base/GuJiTanXian)  
 [序号.Name](网址)  
 
+### Unity常用插件 [Unity Plugin](https://github.com/getker/MyNoteBook/tree/master/UnityProjects/UnityPlugin)  
+[1.Editor Console Pro](https://github.com/getker/MyNoteBook/tree/master/UnityProjects/UnityPlugin/ConsolePro)  
+[2.Find Reference 2](https://github.com/getker/MyNoteBook/tree/master/UnityProjects/UnityPlugin/FindReference2)  
+[//3.古迹探险](https://github.com/getker/MyNoteBook/tree/master/UnityProjects/PlanA/1.Base/GuJiTanXian)  
+[序号.Name](网址)  
+
 ## 教程
 [DoTween文档](http://dotween.demigiant.com/documentation.php)  
 [缓动动画效果查看](http://robertpenner.com/easing/easing_demo.html)  
