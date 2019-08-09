@@ -13,7 +13,8 @@ local print_r = require "3rd/sproto/print_r"
 require "Logic/LuaClass"
 require "Logic/CtrlManager"
 require "Common/functions"
-require "Controller/PromptCtrl"
+-- require "Controller/PromptCtrl"
+require "Controller/TemplateCtrl"
 
 --管理器--
 Game = {};
@@ -39,21 +40,33 @@ function Game.OnInitOK()
     --注册LuaView--
     this.InitViewPanels();
 
-    this.test_class_func();
-    this.test_pblua_func();
-    this.test_cjson_func();
-    this.test_pbc_func();
-    this.test_lpeg_func();
-    this.test_sproto_func();
-    coroutine.start(this.test_coroutine);
+    -- this.test_class_func();
+    -- this.test_pblua_func();
+    -- this.test_cjson_func();
+    -- this.test_pbc_func();
+    -- this.test_lpeg_func();
+    -- this.test_sproto_func();
+    -- coroutine.start(this.test_coroutine);
 
     CtrlManager.Init();
-    local ctrl = CtrlManager.GetCtrl(CtrlNames.Prompt);
-    if ctrl ~= nil and AppConst.ExampleMode == 1 then
+    local ctrl = CtrlManager.GetCtrl(CtrlNames.Template);
+    -- if ctrl ~= nil and AppConst.ExampleMode == 1 then
+    if ctrl ~= nil then
         ctrl:Awake();
     end
        
-    logWarn('LuaFramework InitOK--->>>');
+    logWarn('LuaFramework InitOK--->>>')
+	--test
+	print('Game Logic start >>>')
+	-- luaHelper = LuaFramework.LuaHelper
+    -- resMgr = luaHelper.GetResManager();
+    -- resMgr:LoadPrefab('game', {'Icon'}, OnLoadFinish)
+	print('Game Logic end >>>')
+end
+
+function OnLoadFinish(objs)
+    local go = UnityEngine.GameObject.Instantiate(objs[0])
+    print('load finish >>>')
 end
 
 --测试协同--

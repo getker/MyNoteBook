@@ -1,12 +1,15 @@
-
+-- 所有面板的名称
 CtrlNames = {
-	Prompt = "PromptCtrl",
-	Message = "MessageCtrl"
+	-- Prompt = "PromptCtrl",
+	-- Message = "MessageCtrl",
+	Template = "TemplateCtrl",
 }
 
+-- 所有控制器的名称
 PanelNames = {
-	"PromptPanel",	
-	"MessagePanel",
+	-- "PromptPanel",	
+	-- "MessagePanel",
+	"TemplatePanel",
 }
 
 --协议类型--
