@@ -24,6 +24,8 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
+Assets/FR2_Cache.asset
+Assets/FR2_Cache.asset.meta
 
 # Unity3D generated meta files
 *.pidb.meta
