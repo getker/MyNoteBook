@@ -10,7 +10,7 @@ function MessagePanel.Awake(obj)
 	transform = obj.transform;
 
 	this.InitPanel();
-	logWarn("Awake lua--->>"..gameObject.name);
+	log("Awake lua--->>"..gameObject.name);
 end
 
 --初始化面板--
@@ -20,6 +20,6 @@ end
 
 --单击事件--
 function MessagePanel.OnDestroy()
-	logWarn("OnDestroy---->>>");
+	log("OnDestroy---->>>");
 end
 
