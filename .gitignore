@@ -59,7 +59,7 @@ ehthumbs.db
 /UnityVS.tolua.CSharp.csproj
 /UnityVS.tolua.CSharp.Editor.csproj
 /UnityVS.tolua.sln
-/Assets/FR2_Cache.asset*
+FR2_Cache.asset*
 /Assets/StreamingAssets/Android*
 /Assets/StreamingAssets/Win32*
 /Assets/StreamingAssets/Windows*
