@@ -173,8 +173,8 @@ public class Packager {
         string resPath = AppDataPath + "/" + AppConst.AssetDir + "/";
         if (!Directory.Exists(resPath)) Directory.CreateDirectory(resPath);
         // Game 新增
-        AddBuildMap("template" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Game/GameAssets/Prefabs/Template");
-        AddBuildMap("login" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Game/GameAssets/Prefabs/Login");
+        AddBuildMap("template" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Game/GameAssets/Prefabs/UI/Template");
+        AddBuildMap("login" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Game/GameAssets/Prefabs/UI/Login");
     }
 
     /// <summary>
