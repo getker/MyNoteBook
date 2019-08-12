@@ -8,12 +8,12 @@ local gameObject;
 
 --构建函数--
 function MessageCtrl.New()
-	log("MessageCtrl.New--->>");
+	logWarn("MessageCtrl.New--->>");
 	return this;
 end
 
 function MessageCtrl.Awake()
-	log("MessageCtrl.Awake--->>");
+	logWarn("MessageCtrl.Awake--->>");
 	panelMgr:CreatePanel('Message', this.OnCreate);
 end
 
@@ -24,7 +24,7 @@ function MessageCtrl.OnCreate(obj)
 	message = gameObject:GetComponent('LuaBehaviour');
 	message:AddClick(MessagePanel.btnClose, this.OnClick);
 
-	log("Start lua--->>"..gameObject.name);
+	logWarn("Start lua--->>"..gameObject.name);
 end
 
 --单击事件--

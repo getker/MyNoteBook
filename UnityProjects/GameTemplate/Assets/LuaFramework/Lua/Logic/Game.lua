@@ -12,8 +12,10 @@ local print_r = require "3rd/sproto/print_r"
 
 require "Logic/LuaClass"
 require "Logic/CtrlManager"
+require "Logic/UIManager"
 require "Common/functions"
-require "Controller/PromptCtrl"
+require "Controller/TemplateCtrl"
+require "Controller/LoginCtrl"
 
 --管理器--
 Game = {};
@@ -48,12 +50,17 @@ function Game.OnInitOK()
     -- coroutine.start(this.test_coroutine);
 
     CtrlManager.Init();
-    local ctrl = CtrlManager.GetCtrl(CtrlNames.Prompt);
-    if ctrl ~= nil and AppConst.ExampleMode == 1 then
-        ctrl:Awake();
-    end
-       
-    logWarn('LuaFramework InitOK--->>>');
+    UIManager.Init()
+    
+    print('LuaFramework InitOK--->>>')
+	--test
+	print('Game Logic start >>>')
+    UIManager.OpenPanel(CtrlNames.Login)
+
+	-- luaHelper = LuaFramework.LuaHelper
+    -- resMgr = luaHelper.GetResManager();
+    -- resMgr:LoadPrefab('game', {'Icon'}, OnLoadFinish)
+	print('Game Logic end >>>')
 end
 
 --测试协同--

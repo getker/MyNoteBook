@@ -69,6 +69,9 @@ public class Packager {
         if (AppConst.ExampleMode) {
             HandleExampleBundle();
         }
+        else{
+            HandleGameBundle();
+        }
         string resPath = "Assets/" + AppConst.AssetDir;
         BuildPipeline.BuildAssetBundles(resPath, maps.ToArray(), BuildAssetBundleOptions.None, target);
         BuildFileIndex();
@@ -155,14 +158,23 @@ public class Packager {
     static void HandleExampleBundle() {
         string resPath = AppDataPath + "/" + AppConst.AssetDir + "/";
         if (!Directory.Exists(resPath)) Directory.CreateDirectory(resPath);
-
         AddBuildMap("prompt" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Examples/Builds/Prompt");
         AddBuildMap("message" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Examples/Builds/Message");
-
         AddBuildMap("prompt_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Examples/Textures/Prompt");
         AddBuildMap("shared_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Examples/Textures/Shared");
     }
 
+    /// <summary>
+    /// 处理游戏的实例包
+    /// </summary>
+    static void HandleGameBundle() {
+        string resPath = AppDataPath + "/" + AppConst.AssetDir + "/";
+        if (!Directory.Exists(resPath)) Directory.CreateDirectory(resPath);
+        // Game 新增
+        AddBuildMap("template" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Game/GameAssets/Prefabs/UI/Template");
+        AddBuildMap("login" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Game/GameAssets/Prefabs/UI/Login");
+    }
+    
     /// <summary>
     /// 处理Lua文件
     /// </summary>

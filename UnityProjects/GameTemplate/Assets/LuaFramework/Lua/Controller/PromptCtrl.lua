@@ -17,12 +17,12 @@ local gameObject;
 
 --构建函数--
 function PromptCtrl.New()
-	log("PromptCtrl.New--->>");
+	logWarn("PromptCtrl.New--->>");
 	return this;
 end
 
 function PromptCtrl.Awake()
-	log("PromptCtrl.Awake--->>");
+	logWarn("PromptCtrl.Awake--->>");
 	panelMgr:CreatePanel('Prompt', this.OnCreate);
 end
 
@@ -33,7 +33,7 @@ function PromptCtrl.OnCreate(obj)
 
 	panel = transform:GetComponent('UIPanel');
 	prompt = transform:GetComponent('LuaBehaviour');
-	log("Start lua--->>"..gameObject.name);
+	logWarn("Start lua--->>"..gameObject.name);
 
 	prompt:AddClick(PromptPanel.btnOpen, this.OnClick);
 	resMgr:LoadPrefab('prompt', { 'PromptItem' }, this.InitPanel);

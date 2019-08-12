@@ -42,7 +42,7 @@ namespace LuaFramework {
                 go.AddComponent<LuaBehaviour>();
 
                 if (func != null) func.Call(go);
-                Debug.LogWarning("CreatePanel::>> " + name + " " + prefab);
+                // Debug.LogWarning("CreatePanel::>> " + name + " " + prefab);
             });
 #else
             GameObject prefab = ResManager.LoadAsset<GameObject>(name, assetName);

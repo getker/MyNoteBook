@@ -19,7 +19,7 @@ local gameObject;
 local islogging = false;
 
 function Network.Start() 
-    logWarn("Network.Start!!");
+    log("Network.Start!!");
     Event.AddListener(Protocal.Connect, this.OnConnect); 
     Event.AddListener(Protocal.Message, this.OnMessage); 
     Event.AddListener(Protocal.Exception, this.OnException); 
@@ -144,5 +144,5 @@ function Network.Unload()
     Event.RemoveListener(Protocal.Message);
     Event.RemoveListener(Protocal.Exception);
     Event.RemoveListener(Protocal.Disconnect);
-    logWarn('Unload Network...');
+    log('Unload Network...');
 end
