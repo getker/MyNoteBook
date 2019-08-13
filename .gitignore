@@ -24,11 +24,12 @@ sysinfo.txt
 /*.user
 /*.unityproj
 /*.booproj
-/.idea*/
+.idea*
 *.tmp
 *.svd
 *.pdb
 *.opendb
+GameTemplate.iml
 
 # ============ #
 # OS generated #
